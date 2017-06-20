@@ -48,4 +48,14 @@ mogoimport --db dbname --collection collectionmame --drop --file filepathandname
  {}
  ---
  
+ 查找数据高级：
+ db.student.find({'score.yuwen':{&gt:50}});//分数大于50分 小于用&lt:50
+ 
+ 条件或的查找
+ db.student.find({$or:[{key:value},{key:value}]});
+ 
+ 排序：
+ db.student.find().sort({key1:1,key2:-1});//-1是从大到小排序 1是从小到大排序
+ 
+ 
  
