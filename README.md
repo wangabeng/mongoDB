@@ -42,3 +42,10 @@ mogoimport --db dbname --collection collectionmame --drop --file filepathandname
 --collection collectionmame //往哪个集合里导入
 --drop //把原来的集合清空 可选
 --file filepathandname //可以用sublime创建一个json数据 填写完整的这个json文件的路径 即可
+ json的格式是  
+ {}
+ {}
+ {}
+ ---
+ 
+ 
