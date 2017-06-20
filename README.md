@@ -12,14 +12,20 @@ mongo
 任务：新建一个dbname的数据库 添加student集合 往student里添加数据
 
 show dbs 列出所有数据库
-use dbname  //新建或使用数据库 use一个不存在的 就是新建
+use dbname  //新建或使用数据库 use一个不存在的 就是新建，但是 如果是创建 必须往这个数据库的集合里插入一个数据 才能把这个数据库创建成功
 db  //查看当前在哪个数据库里  显示dbname
 
-show collection //查看有哪些集合
+show collections //查看有哪些集合
 
 往当前的dbname数据库里加集合 往集合里添加数据 （如果student不存在 就会创建一个student集合 同时链式操作 添加数据）
 db.student.insert({'name':'abeng','age':12})
 
 student就是所谓的集合 存放着很多json数据
 
-db.student.find() //查看这个数据库里面的数据
+db.student.find() //查看这个student集合里面所有的数据
+
+查找一条数据
+db.student.find({'name':'abeng'})//查找name 是abeng的数据
+
+可视化工具：
+mongovue
