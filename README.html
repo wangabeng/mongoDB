@@ -71,3 +71,6 @@ mogoimport --db dbname --collection collectionmame --drop --file filepathandname
    {key:value}//完整替换
  )
  
+删除：
+db.student.drop();//把数据库删除 把集合都删除了
+db.student.remove({key:value});//条件删除 db.student.remove()把集合里面的数据都删了 但是集合还在
