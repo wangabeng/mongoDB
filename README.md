@@ -29,3 +29,16 @@ db.student.find({'name':'abeng'})//查找name 是abeng的数据
 
 可视化工具：
 mongovue
+
+删除数据库
+db  //查看当前数据库
+db.dropDatabase();//删除当前数据库
+
+
+导入数据库
+另外开一个cmd
+mogoimport --db dbname --collection collectionmame --drop --file filepathandname
+--db dbname //往哪个数据库里导入
+--collection collectionmame //往哪个集合里导入
+--drop //把原来的集合清空 可选
+--file filepathandname //可以用sublime创建一个json数据 填写完整的这个json文件的路径 即可
