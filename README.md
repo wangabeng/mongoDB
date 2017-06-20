@@ -58,4 +58,16 @@ mogoimport --db dbname --collection collectionmame --drop --file filepathandname
  db.student.find().sort({key1:1,key2:-1});//-1是从大到小排序 1是从小到大排序
  
  
+ 修改：
+ db.student.update(
+   {'name':'abeng'},//先查找
+   {
+     $set:{key:value}
+   }
+ )
+ 
+  db.student.update(
+   {'name':'abeng'},//先查找
+   {key:value}//完整替换
+ )
  
