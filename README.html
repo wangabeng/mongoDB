@@ -1,4 +1,14 @@
-开机命令
+# window安装
+  1 下载安装文件 可以选择在c盘安装
+  2 安装后 把安装目录的bin目录加入环境变量
+  3 启动（window 32位环境需要加参数 --journal）
+    在已有的数据库文件夹上打开数据库： 
+    mongod --dbpath d:/mongo --journal
+    如果在新建的数据库文件夹打开 需要加个储存引擎的参数
+    mongod --dbpath d:/mongodata --journal  --storageEngine=mmapv1
+    
+
+# 开机命令（针对window）
 现在D盘建立一个mongo文件夹
 >mongod --storageEngine=mmapv1 --dbpath d:/mongo
 mongod //开机命令
